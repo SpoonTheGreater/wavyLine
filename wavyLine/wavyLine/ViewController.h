@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WavyView.h"
 
 @interface ViewController : UIViewController
-
+{
+    WavyView *testLine;
+}
 
 @end
 

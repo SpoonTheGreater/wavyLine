@@ -17,6 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    testLine = [[WavyView alloc] initWithFrame:self.view.bounds inColor:[UIColor cyanColor]];
+    [self.view addSubview:testLine];
 }
 
 - (void)didReceiveMemoryWarning {

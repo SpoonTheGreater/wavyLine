@@ -15,6 +15,7 @@
 		1A1CA2A51CE3940400627985 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1CA2A31CE3940400627985 /* LaunchScreen.storyboard */; };
 		1A1CA2B01CE3940500627985 /* wavyLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CA2AF1CE3940500627985 /* wavyLineTests.m */; };
 		1A1CA2BB1CE3940500627985 /* wavyLineUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CA2BA1CE3940500627985 /* wavyLineUITests.m */; };
+		1A1CA2CB1CE3959A00627985 /* WavyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CA2CA1CE3959A00627985 /* WavyView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		1A1CA2B61CE3940500627985 /* wavyLineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = wavyLineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1CA2BA1CE3940500627985 /* wavyLineUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = wavyLineUITests.m; sourceTree = "<group>"; };
 		1A1CA2BC1CE3940500627985 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A1CA2C91CE3959A00627985 /* WavyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WavyView.h; path = WavyView/WavyView.h; sourceTree = "<group>"; };
+		1A1CA2CA1CE3959A00627985 /* WavyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WavyView.m; path = WavyView/WavyView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		1A1CA2941CE3940400627985 /* wavyLine */ = {
 			isa = PBXGroup;
 			children = (
+				1A1CA2C81CE3957C00627985 /* WavyView */,
 				1A1CA2981CE3940400627985 /* AppDelegate.h */,
 				1A1CA2991CE3940400627985 /* AppDelegate.m */,
 				1A1CA29B1CE3940400627985 /* ViewController.h */,
@@ -138,6 +142,15 @@
 				1A1CA2BC1CE3940500627985 /* Info.plist */,
 			);
 			path = wavyLineUITests;
+			sourceTree = "<group>";
+		};
+		1A1CA2C81CE3957C00627985 /* WavyView */ = {
+			isa = PBXGroup;
+			children = (
+				1A1CA2C91CE3959A00627985 /* WavyView.h */,
+				1A1CA2CA1CE3959A00627985 /* WavyView.m */,
+			);
+			name = WavyView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +286,7 @@
 				1A1CA29D1CE3940400627985 /* ViewController.m in Sources */,
 				1A1CA29A1CE3940400627985 /* AppDelegate.m in Sources */,
 				1A1CA2971CE3940400627985 /* main.m in Sources */,
+				1A1CA2CB1CE3959A00627985 /* WavyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
