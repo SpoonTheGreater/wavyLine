@@ -59,6 +59,9 @@
     [linePath moveToPoint:(CGPoint){self.frame.size.width*0.5,self.frame.size.height * bufferMod}];
     [linePath addCurveToPoint:(CGPoint){self.frame.size.width*0.5,self.frame.size.height * (1.0 - bufferMod)} controlPoint1:[[controlPoints firstObject] CGPointValue] controlPoint2:[[controlPoints lastObject] CGPointValue]];
     
+    double hue = ([[controlPoints lastObject] CGPointValue].x / self.bounds.size.width) + ([[controlPoints lastObject] CGPointValue].y / self.bounds.size.height) ;
+    [lineLayer setStrokeColor:[UIColor colorWithHue:hue * 0.5 saturation:1 brightness:1 alpha:1].CGColor];
+    
     [lineLayer setPath:linePath.CGPath];
 }
 
