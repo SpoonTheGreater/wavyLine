@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0471A91DABE5F700500F7D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0471A71DABE5F700500F7D /* Fabric.framework */; };
+		1A0471AA1DABE5F700500F7D /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A0471A81DABE5F700500F7D /* Crashlytics.framework */; };
 		1A1CA2971CE3940400627985 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CA2961CE3940400627985 /* main.m */; };
 		1A1CA29A1CE3940400627985 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CA2991CE3940400627985 /* AppDelegate.m */; };
 		1A1CA29D1CE3940400627985 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1CA29C1CE3940400627985 /* ViewController.m */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A0471A71DABE5F700500F7D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		1A0471A81DABE5F700500F7D /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		1A1CA2921CE3940400627985 /* wavyLine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wavyLine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A1CA2961CE3940400627985 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A1CA2981CE3940400627985 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A0471AA1DABE5F700500F7D /* Crashlytics.framework in Frameworks */,
+				1A0471A91DABE5F700500F7D /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +127,8 @@
 		1A1CA2951CE3940400627985 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1A0471A71DABE5F700500F7D /* Fabric.framework */,
+				1A0471A81DABE5F700500F7D /* Crashlytics.framework */,
 				1A1CA2961CE3940400627985 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -163,6 +171,7 @@
 				1A1CA28E1CE3940400627985 /* Sources */,
 				1A1CA28F1CE3940400627985 /* Frameworks */,
 				1A1CA2901CE3940400627985 /* Resources */,
+				1A0471A61DABE5E600500F7D /* Run Script */,
 			);
 			buildRules = (
 			);
@@ -220,6 +229,7 @@
 				TargetAttributes = {
 					1A1CA2911CE3940400627985 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 46K9FG5ZG8;
 					};
 					1A1CA2AA1CE3940500627985 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -277,6 +287,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A0471A61DABE5E600500F7D /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run f3580a7ffbb2322eac670a86ac880aa4a851b544 48edb3f84b9ddc65b8a99596790587e5748dd8f878ba1827a5134432cc1b000a";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1A1CA28E1CE3940400627985 /* Sources */ = {
@@ -429,6 +456,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46K9FG5ZG8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wavyLine",
+				);
 				INFOPLIST_FILE = wavyLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spoonware.wavyLine;
@@ -440,6 +472,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 46K9FG5ZG8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/wavyLine",
+				);
 				INFOPLIST_FILE = wavyLine/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spoonware.wavyLine;
@@ -512,6 +549,7 @@
 				1A1CA2C11CE3940500627985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A1CA2C21CE3940500627985 /* Build configuration list for PBXNativeTarget "wavyLineTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +558,7 @@
 				1A1CA2C41CE3940500627985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A1CA2C51CE3940500627985 /* Build configuration list for PBXNativeTarget "wavyLineUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +567,7 @@
 				1A1CA2C71CE3940500627985 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
